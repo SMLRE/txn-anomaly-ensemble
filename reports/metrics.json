@@ -1,0 +1,56 @@
+{
+  "transactions": 65911,
+  "anomalies": 673,
+  "dbscan_eps_elbow": 0.5751,
+  "iforest_contamination": 0.01,
+  "results": {
+    "isolation_forest": {
+      "alerts": 660,
+      "precision": 0.6697,
+      "recall": 0.6568,
+      "f1": 0.6632
+    },
+    "dbscan": {
+      "alerts": 2010,
+      "precision": 0.2821,
+      "recall": 0.8425,
+      "f1": 0.4227
+    },
+    "statistical": {
+      "alerts": 4867,
+      "precision": 0.1118,
+      "recall": 0.8083,
+      "f1": 0.1964
+    },
+    "ensemble_OR (original)": {
+      "alerts": 5825,
+      "precision": 0.1071,
+      "recall": 0.9272,
+      "f1": 0.1921,
+      "auc": 0.9543
+    },
+    "ensemble_2of3 (fix)": {
+      "alerts": 1206,
+      "precision": 0.4668,
+      "recall": 0.8366,
+      "f1": 0.5993,
+      "auc": 0.9543
+    },
+    "ensemble_3of3": {
+      "alerts": 506,
+      "precision": 0.7233,
+      "recall": 0.5438,
+      "f1": 0.6209,
+      "auc": 0.9543
+    }
+  },
+  "alert_reduction_or_to_2of3": 0.793,
+  "precision_gain_x": 4.36,
+  "recall_by_type_2of3": {
+    "BURST": 0.72,
+    "LARGE_AMOUNT": 0.977,
+    "NEW_CPTY_LARGE": 0.773,
+    "ODD_HOUR": 0.98,
+    "STRUCTURING": 1.0
+  }
+}

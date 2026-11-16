@@ -1,0 +1,7 @@
+,alerts,precision,recall,f1,auc
+isolation_forest,660.0,0.6697,0.6568,0.6632,
+dbscan,2010.0,0.2821,0.8425,0.4227,
+statistical,4867.0,0.1118,0.8083,0.1964,
+ensemble_OR (original),5825.0,0.1071,0.9272,0.1921,0.9543
+ensemble_2of3 (fix),1206.0,0.4668,0.8366,0.5993,0.9543
+ensemble_3of3,506.0,0.7233,0.5438,0.6209,0.9543
