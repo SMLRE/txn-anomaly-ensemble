@@ -1,5 +1,7 @@
 # Corporate Transaction Anomaly Detection (3-Detector Ensemble)
 
+[![CI](https://github.com/SMLRE/txn-anomaly-ensemble/actions/workflows/ci.yml/badge.svg)](https://github.com/SMLRE/txn-anomaly-ensemble/actions/workflows/ci.yml)
+
 Flags unusual corporate banking transactions with three unsupervised detectors (**Isolation Forest**, **DBSCAN** and **statistical rules**). A transaction is only raised when **at least 2 of the 3 agree**, which cuts alert noise sharply compared with the original "any detector fires" rule.
 
 > **About the data.** This is a public re-implementation of anomaly-detection work I reviewed and fixed at a commercial bank. Transaction data is **not** in this repo. The code runs on synthetic corporate transactions with **injected, labelled anomalies** (large amounts, odd hours, new-counterparty payments, bursts, threshold structuring), so the effect of each fix can be measured. The "In production" section describes the real work. Results after it come from the synthetic data.
@@ -55,4 +57,4 @@ notebooks/walkthrough.ipynb
 
 ## Author
 
-**Oluwasemilore Sadare**, Senior Data Scientist · [LinkedIn](https://www.linkedin.com/in/oluwasemilore-sadare) · [GitHub](https://github.com/SMLRE)
+**Oluwasemilore Sadare**, Data Scientist · [LinkedIn](https://www.linkedin.com/in/oluwasemilore-sadare) · [GitHub](https://github.com/SMLRE)
